@@ -1,0 +1,21 @@
+dev-qt/qtwebkit gstreamer icu 
+dev-qt/qtcore -a
+# required by games-strategy/freeciv-2.5.3::gentoo[sound,-dedicated]
+# required by freeciv (argument)
+>=media-libs/sdl-mixer-1.2.12-r4 vorbis
+# required by app-emulation/docker-1.11.0::gentoo[seccomp]
+# required by app-emulation/docker (argument)
+>=sys-libs/libseccomp-2.3.0 static-libs
+# required by sys-devel/clang-3.7.1-r100::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-devel/llvm-3.7.1-r3 clang
+# required by x11-drivers/xf86-video-ati-7.7.0::gentoo[glamor]
+# required by x11-base/xorg-drivers-1.18-r1::gentoo[video_cards_radeon]
+# required by x11-base/xorg-server-1.17.4::gentoo[xorg]
+# required by x11-drivers/xf86-input-evdev-2.10.3::gentoo
+>=x11-base/xorg-server-1.18.4 glamor
+# required by www-client/chromium-54.0.2840.100::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvpx-1.5.0 svc

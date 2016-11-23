@@ -1,0 +1,9 @@
+# required by dev-util/electron-0.36.12-r3::gentoo
+# required by app-editors/atom-1.8.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.9.4 icu
+
+# required by dev-util/electron-0.36.12-r3::gentoo
+# required by @preserved-rebuild (argument)
+=dev-libs/libxml2-2.9.3 icu
