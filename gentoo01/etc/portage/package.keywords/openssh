@@ -56,3 +56,11 @@
 >=sci-libs/opencascade-7.0.0 ~amd64
 # required by sys-kernel/dracut (argument)
 =sys-kernel/dracut-044 ~amd64
+# required by pixz (argument)
+=app-arch/pixz-1.0.6 ~amd64
+# required by handbrake (argument)
+=media-video/handbrake-0.10.5-r1 ~amd64
+# required by x11-drivers/nvidia-drivers (argument)
+=x11-drivers/nvidia-drivers-375.20 ~amd64
+# required by @__auto_slot_operator_replace_installed__ (argument)
+<=dev-util/electron-0.37.8-r1 ~amd64
