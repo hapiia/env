@@ -54,6 +54,20 @@ dev-qt/qtwebkit gstreamer icu
 # required by dev-util/nvidia-cuda-toolkit-6.5.14::gentoo
 # required by dev-util/nvidia-cuda-sdk-6.5.14::gentoo
 # required by nvidia-cuda-sdk (argument)
+>=x11-proto/xcb-proto-1.12-r2 abi_x86_32
+>=x11-libs/libXdmcp-1.1.2-r1 abi_x86_32
+>=x11-proto/xextproto-7.3.0 abi_x86_32
+>=x11-proto/inputproto-2.3.2 abi_x86_32
+>=x11-proto/kbproto-1.0.7 abi_x86_32
+>=dev-libs/libpthread-stubs-0.3-r1 abi_x86_32
+>=x11-libs/libXau-1.0.8 abi_x86_32
+>=x11-proto/xf86bigfontproto-1.2.0-r1 abi_x86_32
+>=x11-libs/libxcb-1.12 abi_x86_32
+>=x11-libs/libXext-1.3.3 abi_x86_32
+>=x11-proto/xproto-7.0.29 abi_x86_32
+>=x11-libs/libX11-1.6.4 abi_x86_32
+
 >=x11-drivers/nvidia-drivers-375.20-r1 uvm
+
 
 >=dev-libs/libgit2-0.24.2 ssh
