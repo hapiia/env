@@ -55,5 +55,7 @@ dev-qt/qtwebkit gstreamer icu
 # required by dev-util/nvidia-cuda-sdk-6.5.14::gentoo
 # required by nvidia-cuda-sdk (argument)
 >=x11-drivers/nvidia-drivers-375.20-r1 uvm
-
+# required by app-editors/atom-1.12.2::gentoo
+# required by @selected
+# required by @world (argument)
 >=dev-libs/libgit2-0.24.2 ssh

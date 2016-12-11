@@ -13,10 +13,12 @@ app-i18n/mozc
 app-portage/cpuid2cpuflags
 app-portage/flaggie
 app-portage/gentoolkit
+dev-libs/nvidia-cuda-cudnn
 dev-python/pip
 dev-python/pyside
 dev-qt/qt-meta
 dev-qt/qtopengl:4
+dev-util/nvidia-cuda-sdk
 dev-vcs/git
 games-simulation/flightgear
 games-strategy/freeciv

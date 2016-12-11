@@ -16,6 +16,7 @@ media-video/handbrake
 x11-drivers/nvidia-drivers
 dev-util/nvidia-cuda-toolkit
 dev-util/nvidia-cuda-sdk
+dev-libs/nvidia-cuda-cudnn
 # required by @__auto_slot_operator_replace_installed__ (argument)
 dev-util/electron
 
