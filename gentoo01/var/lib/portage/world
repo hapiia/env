@@ -18,11 +18,14 @@ dev-python/pyside
 dev-qt/qt-meta
 dev-qt/qtopengl:4
 dev-vcs/git
+games-simulation/flightgear
 games-strategy/freeciv
 mate-extra/mate-system-monitor
 media-fonts/ja-ipafonts
 media-sound/alsa-utils
 media-video/handbrake
+media-video/mplayer
+media-video/vlc
 net-firewall/firewalld
 net-fs/cifs-utils
 net-fs/samba

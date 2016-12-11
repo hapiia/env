@@ -42,3 +42,16 @@ dev-qt/qtwebkit gstreamer icu
 # required by x11-drivers/xf86-video-nouveau-1.0.12::gentoo
 # required by @preserved-rebuild (argument)
 >=x11-libs/libdrm-2.4.70 video_cards_nouveau video_cards_amdgpu video_cards_radeon
+# required by games-simulation/flightgear-3.4.0::gentoo
+# required by flightgear (argument)
+>=dev-games/openscenegraph-3.4.0 png
+# required by gnome-base/gnome-keyring-3.20.0::gentoo
+# required by gnome-base/libgnome-keyring-3.12.0::gentoo
+# required by app-editors/atom-1.10.2::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-crypt/pinentry-0.9.7-r1 gnome-keyring
+# required by dev-util/nvidia-cuda-toolkit-6.5.14::gentoo
+# required by dev-util/nvidia-cuda-sdk-6.5.14::gentoo
+# required by nvidia-cuda-sdk (argument)
+>=x11-drivers/nvidia-drivers-375.20-r1 uvm
