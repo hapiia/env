@@ -9,5 +9,6 @@ cp -rf --parents /etc/portage/package.mask .
 cp -rf --parents /etc/portage/package.license .
 
 cp -rf --parents /usr/src/linux/.config .
+cp -rf --parents /etc/conf.d/modules .
 
 cp -rf --parents /usr/local/portage/* .

@@ -1,0 +1,15 @@
+net-misc/iputils -caps -filecaps
+# required by sys-auth/consolekit-1.1.0-r1::gentoo
+# required by sys-auth/polkit-0.113::gentoo[-systemd]
+# required by dev-python/python-slip-0.6.1::gentoo[dbus]
+# required by net-firewall/firewalld-0.4.3.3::gentoo
+# required by firewalld (argument)
+>=dev-libs/glib-2.48.2 dbus
+# required by net-firewall/firewalld-0.4.3.3::gentoo
+# required by firewalld (argument)
+>=dev-python/python-slip-0.6.1 dbus
+# required by sys-auth/polkit-0.113::gentoo[-systemd]
+# required by dev-python/python-slip-0.6.1::gentoo[dbus]
+# required by net-firewall/firewalld-0.4.3.3::gentoo
+# required by firewalld (argument)
+>=sys-auth/consolekit-1.1.0-r1 policykit

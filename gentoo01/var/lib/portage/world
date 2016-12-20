@@ -1,5 +1,6 @@
 app-admin/makepasswd
 app-admin/python-updater
+app-admin/sudo
 app-admin/sysklogd
 app-arch/pixz
 app-editors/atom
@@ -37,6 +38,7 @@ net-misc/curl
 net-misc/dhcpcd
 net-misc/ntp
 net-misc/openssh
+sci-misc/boinc
 sys-apps/lm_sensors
 sys-apps/pciutils
 sys-boot/grub:2
