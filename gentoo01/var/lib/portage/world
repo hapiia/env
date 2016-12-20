@@ -11,6 +11,7 @@ app-emulation/virt-manager
 app-emulation/vmware-modules::gentoo
 app-emulation/vmware-player
 app-i18n/mozc
+app-office/libreoffice
 app-portage/cpuid2cpuflags
 app-portage/flaggie
 app-portage/gentoolkit

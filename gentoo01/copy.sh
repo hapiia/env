@@ -11,4 +11,7 @@ cp -rf --parents /etc/portage/package.license .
 cp -rf --parents /usr/src/linux/.config .
 cp -rf --parents /etc/conf.d/modules .
 
+cp -rf --parents /etc/X11/xorg.conf.d/30-keyboard.conf .
+cp -rf --parents /etc/conf.d/keymaps .
+
 cp -rf --parents /usr/local/portage/* .
