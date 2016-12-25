@@ -45,3 +45,5 @@ app-editors/atom
 app-eselect/eselect-electron
 
 sci-misc/boinc
+# required by www-client/google-chrome (argument)
+=www-client/google-chrome-55.0.2883.87 ~amd64

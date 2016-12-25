@@ -7,7 +7,7 @@
 #modules_2_6="tun"
 #modules_2="ipv6"
 #modules="ohci1394"
-modules="vmblock vmci vmmon vmnet vsock"
+modules="8812au vmblock vmci vmmon vmnet vsock"
 
 # Linux users can give modules a different name when they load - the new name
 # will also be used to pick arguments below.
