@@ -3,7 +3,7 @@
   tasks:
     - service: name=sysklogd enabled=yes
     # - service: name=dhcpcd enabled=yes
-    # - service: name=sshd enabled=yes
+    - service: name=sshd enabled=yes
     - service: name=net.eth0 enabled=yes
     - service: name=docker enabled=yes
     - service: name=firewalld enabled=yes

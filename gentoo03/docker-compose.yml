@@ -1,7 +1,6 @@
 git:
   build: https://github.com/hapiia/docker-install.git#master:git
-  image: hapii-git
   ports:
     - "8888:80"
   volumes:
-    - /opt/docker/git:/opt/git
+    - /opt/docker/data/git:/opt/git

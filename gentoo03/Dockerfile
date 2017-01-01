@@ -45,6 +45,7 @@ echo "CONFIG_CGROUP_NET_PRIO=y" >> /usr/src/linux/.config
 RUN emerge app-emulation/docker app-emulation/docker-compose
 RUN usermod -aG docker tatsuyasen
 
+RUN echo "127.0.0.1       gentoo03" >> /etc/hosts
 RUN echo "www-servers/apache apache2_modules_http2 apache2_modules_proxy apache2_modules_deflate ssl threads" > /etc/portage/package.use/apache
 # RUN echo "APACHE2_MODULES=\"proxy\"" >> /etc/portage/make.conf
 
@@ -74,4 +75,7 @@ RUN emerge app-crypt/certbot certbot-apache
 firewall-cmd --add-port=80/tcp --permanent
 firewall-cmd --add-port=443/tcp --permanent
 firewall-cmd --add-port=1988/tcp --permanent
+
+RUN certbot --apache certonly
+# certbot renew
 firewall-cmd --reload
