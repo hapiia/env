@@ -9,10 +9,10 @@ EAPI=6
 
 inherit eutils linux-mod user git-r3
 
-MY_P=rtl8212au-${PV}
+MY_P=rtl8212AU-${PV}
 DESCRIPTION="Kernel Modules for Virtualbox"
 HOMEPAGE="http://www.virtualbox.org/"
-SRC_URI="https://github.com/diederikdehaas/rtl8812AU/archive/rtl8812AU-4.3.14-9.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/diederikdehaas/rtl8812AU/archive/rtl8812AU-4.3.14-9.tar.gz -> ${PV}.tar.gz"
 
 # EGIT_REPO_URI="https://github.com/gnab/rtl8812au.git"
 # EGIT_CHECKOUT_DIR="${WORKDIR}/${P}"
@@ -24,7 +24,7 @@ IUSE="pax_kernel"
 
 # RDEPEND="!=app-emulation/virtualbox-9999"
 
-S="${WORKDIR}/rtl8812au-master"
+S="${WORKDIR}/rtl8812AU-rtl8812AU-4.3.14-9"
 
 BUILD_TARGETS="all"
 BUILD_TARGET_ARCH="${ARCH}"

@@ -151,3 +151,9 @@ dev-qt/qtwebkit gstreamer icu
 # required by sci-misc/boinc-7.6.33-r1::gentoo[X]
 # required by boinc (argument)
 >=media-gfx/imagemagick-6.9.6.6 tiff png
+# required by app-emulation/libvirt-2.3.0::gentoo[virt-network]
+# required by @selected
+# required by @world (argument)
+>=net-dns/dnsmasq-2.76 script
+
+app-emulation/qemu spice
