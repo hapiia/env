@@ -40,8 +40,8 @@ cd /mnt/gentoo
 wget --no-check-certificate https://github.com/hapiia/env/raw/master/gentoo03/install2.sh
 chmod 755 install2.sh
 
-mydate=`date '+%Y%m'`
-wget -nc ftp://ftp.iij.ad.jp/pub/linux/gentoo/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-${mydate}*.tar.bz2
+mydate=`date '+%Y%m'` # ${mydate}
+wget -nc ftp://ftp.iij.ad.jp/pub/linux/gentoo/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-201612*.tar.bz2
 
 tar xvjpf stage3-*.tar.bz2 --xattrs
 
