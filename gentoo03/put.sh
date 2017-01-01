@@ -8,11 +8,11 @@ mkdir /opt/docker/data
 mkdir /opt/docker/data/git
 mkdir /opt/ansible
 
-wget -nc ${GIT_URL}/firewall.yml -O /etc/ansible/firewall.yml
-wget -nc ${GIT_URL}/service.yml -O /etc/ansible/service.yml
-wget -nc ${GIT_URL}/fstab.yml -O /etc/ansible/fstab.yml
-wget -nc ${GIT_URL}/hostname.yml -O /etc/ansible/hostname.yml
+wget -nc ${GIT_URL}/firewall.yml -O /opt/ansible/firewall.yml
+wget -nc ${GIT_URL}/service.yml -O /opt/ansible/service.yml
+wget -nc ${GIT_URL}/fstab.yml -O /opt/ansible/fstab.yml
+wget -nc ${GIT_URL}/hostname.yml -O /opt/ansible/hostname.yml
 
-wget -nc ${GIT_URL}/docker-compose.yml -O /etc/docker/docker-compose.yml
+wget -nc ${GIT_URL}/docker-compose.yml -O /opt/docker/docker-compose.yml
 
 wget -nc ${GIT_URL}/00_git_hapii.conf -O /etc/apache2/vhosts.d/00_git_hapii.conf
