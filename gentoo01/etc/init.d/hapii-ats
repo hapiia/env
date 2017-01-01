@@ -1,0 +1,23 @@
+#!/sbin/openrc-run
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
+
+depend() {
+after docker
+need docker
+}
+
+start() {
+  ebegin "Starting hapii-ats"
+  start-stop-daemon --start --exec "docker" --pidfile "/var/run/hapiiats.pid" -- run -v /home/tatsuyasen/git/server-install/etc/trafficserver:/opt/trafficserver/etc/trafficserver -p 8080:8080 -itd hapii-ats
+  eend $?
+# docker run -v /home/tatsuyasen/git/server-install/etc/trafficserver:/opt/trafficserver/etc/trafficserver -p 8080:8080 -itd hapii-ats
+
+}
+
+stop() {
+  ebegin "Stopping hapii-ats"
+  start-stop-daemon --stop --exec "docker" --pidfile "/var/run/hapiiats.pid" -- run -v /home/tatsuyasen/git/server-install/etc/trafficserver:/opt/trafficserver/etc/trafficserver -p 8080:8080 -itd hapii-ats
+  eend $?
+}

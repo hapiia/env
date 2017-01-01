@@ -17,3 +17,4 @@ cp -rf --parents /etc/conf.d/net .
 
 cp -rf --parents /usr/local/portage/* .
 
+cp -rf --parents /etc/init.d/hapii-ats .
