@@ -5,3 +5,6 @@
     # - service: name=dhcpcd enabled=yes
     # - service: name=sshd enabled=yes
     - service: name=net.eth0 enabled=yes
+    - service: name=docker enabled=yes
+    - service: name=firewalld enabled=yes
+    - service: name=apache2 enabled=yes

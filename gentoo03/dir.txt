@@ -1,0 +1,13 @@
+/opt/docker/
+/opt/docker/docker-compose.yml
+/opt/docker/data/git/
+/opt/docker/data/git/htpasswd
+/opt/docker/data/git/(repository)
+
+/etc/apache2/vhosts.d/00_git_hapii.conf
+
+/opt/ansible/
+/opt/ansible/firewall.yml
+/opt/ansible/fstab.yml
+/opt/ansible/hostname.yml
+/opt/ansible/service.yml
