@@ -46,13 +46,15 @@ RUN emerge app-emulation/docker app-emulation/docker-compose
 RUN usermod -aG docker tatsuyasen
 
 RUN echo "127.0.0.1       gentoo03" >> /etc/hosts
-RUN echo "www-servers/apache apache2_modules_http2 apache2_modules_proxy apache2_modules_deflate ssl threads" > /etc/portage/package.use/apache
+RUN echo "www-servers/apache apache2_modules_http2 apache2_modules_proxy \
+apache2_modules_proxy_http apache2_modules_auth_digest apache2_modules_deflate \
+ssl threads" > /etc/portage/package.use/apache
 # RUN echo "APACHE2_MODULES=\"proxy\"" >> /etc/portage/make.conf
 
 RUN emerge www-servers/apache
 
 # /etc/conf.d/apache2
-# -D HTTP2 -D PROXY
+# -D AUTH_DIGEST -D HTTP2 -D PROXY
 
 # CONFIG_SYSVIPC=y
 # /etc/apache2/httpd.conf
@@ -72,10 +74,9 @@ echo "=app-crypt/acme-9999 **" >> /etc/portage/package.keywords/certbot-apache
 
 RUN emerge app-crypt/certbot certbot-apache
 
-firewall-cmd --add-port=80/tcp --permanent
-firewall-cmd --add-port=443/tcp --permanent
-firewall-cmd --add-port=1988/tcp --permanent
-
+firewall-cmd --zone=block --add-port=80/tcp --permanent
+firewall-cmd --zone=block --add-port=443/tcp --permanent
+firewall-cmd --zone=block --add-port=1988/tcp --permanent
+firewall-cmd --reload
 RUN certbot --apache certonly
 # certbot renew
-firewall-cmd --reload
